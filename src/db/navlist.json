@@ -1,0 +1,10 @@
+[
+    {"id": 1,"cat": "desktop"},
+    {"id": 2,"cat": "laptop"},
+    {"id": 3,"cat": "monitor"},
+    {"id": 4,"cat": "ups"},
+    {"id": 5,"cat": "phone"},
+    {"id": 6,"cat": "tablet"},
+    {"id": 7,"cat": "components"},
+    {"id": 8,"cat": "camera"}
+]

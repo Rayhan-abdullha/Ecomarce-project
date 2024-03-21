@@ -1,0 +1,50 @@
+{
+    "category": {
+      "title": "Buy Processors at the best Price in Bangladesh",
+      "description": "CPU Stands for the central processing unit. It is also called a central main processor, or simply just processor. It is essentially an electronic circuit that acts as the brain of the system. The CPU drives other components of the system to perform the commands of the user. Processors are available in computers, phones, TVs, and other smart electronic devices. The CPU is connected to the PC via Motherboard. The form, design, and implementation of CPUs have changed over time, but their fundamental operation remains almost unchanged. Currently, the market has two main CPU Brands Intel and AMD."
+    },
+    "latestProcessor": {
+      "title": "Latest Processor price list in BD 2024",
+      "label": {
+        "name": "Processor Name",
+        "price": "Price"
+      },
+      "processors": [
+        {
+            "id": 1,
+          "name": "AMD Ryzen 5 8500G Processor with Radeon Graphics",
+          "price": "22,990৳"
+        },
+        {
+            "id": 2,
+          "name": "AMD Ryzen 7 5700X3D Processor",
+          "price": "29,500৳"
+        },
+        {
+            "id": 3,
+            "name": "AMD Ryzen 5 8600G Processor with Radeon Graphics",
+            "price": "29,500৳"
+          }
+      ]
+    },
+    "chooseProcessor": {
+      "title": "Choose Your Desktop PC Processor from Intel or AMD",
+      "intelDescription": "“Intel 4004” was the first commercially introduced microprocessor in the market in 1970 and the most widely used model was “Intel 8080” released in 1974 that has made a revolutionary change in almost every processing segment. In competition mainframe and minicomputer manufacturers had launched proprietary IC development programs to upgrade their architecture and came up with adversely compatible instruction set with their older hardware and software. CPU has become the synonym for microprocessors as it is vastly popularized with personal computers.  Previously numerous small integrated circuits (ICs) used on one or more circuit boards on the other hand microprocessor introduced small CPUs with a much smaller number of ICs that can be combined in a single processing chip. However, the size, construction, and general form of CPUs have changed drastically since 1950 but the basic shape & function has remained unchanged."
+    },
+    "brand": [
+      {
+        "id": 1,
+        "name": "intel processor",
+        "discription": "Intel stands for “Integrated Electronics”. Intel Corporation is an American multinational corporation and technology company headquartered in Santa Clara, California, in Silicon Valley. Founded by Robert Noyce, it is the developer of the very first 32-bit x86 processor named Intel 8086. Intel has many series of processors like the Core, Pentium, or the Celeron. With sets of unique traits; Intel releases a newer generation Almost every year. The most common Intel processor used is the Core series. The Core Series CPUs consist of the Core i3, Core i5, Core i7, and the high-performance Core i9. Currently, the 4th Generation is the oldest one available. Intel CPUs up to the 11h generation processors have 4 separate Cores. The very latest 12th Generation of Core processors was released with its two sets of cores called E-Cores and P Cores. Intel did not rehash the Older 4 core architecture in favor of performance & power efficiency. These CPUs have a whole new Hybrid Architecture Alongside some traits that are completely new to the software industry. With a size from 14 to 10nm; Core series Intel Processors have the best performance per Watt, lower power draw with high responsiveness making them perfect for productivity, entertainment & work management. The turbo boost technology and integrated HD Graphics further enhance the Performance. Intel has other processors suitable for low to high budget ranges. For Gaming and Content creations Intel has hi-end HEDT CPUs. For the lower budget range, they have CPUs like Celeron, Atom, and Pentium. Intel CPUs support the latest DDR3, DDR4 hi-speed RAMs. The latest 12th Generation processors support DDR5 RAM. Intel's CPU has integrated for Wi-Fi 802.11ax and Hi-speed USB and Thunderbolt ports."
+      }, {
+        "id": 2,
+        "name": "amd processor",
+        "discription": "AMD stands for Advanced Micro Devices. It is an American multinational semiconductor company based in Santa Clara, California. It was founded by Jerry Sanders, Jack Gifford, and John Carey. It started supplying 32 Bit x86 processors as a 2nd source manufacturer and became a competitor with their first Am386 CPU. AMD is known for the processor series “Ryzen” as the very first consumer-level implementation of the new Zen microarchitecture introduced back in 2017. In 2018 the first batch of 12nm 2nd generation AMD Ryzen CPUs was released. The latest AMD Ryzen Processor chipset with a 7nm bias was released in 2019. At First, AMD processors were an entry-level competitor of the Intel processors. After the introduction of the AMD Ryzen Series, it is the biggest competition of Intel. They are known to be the most budget Friendly processors ever. Apart from Ryzen; AMD has a few other processor series available. The AMD Ryzen processor lineup includes Ryzen 3, Ryzen 5, Ryzen 7, and Ryzen 9 processors. Although AMD Ryzen processor models normally includes Ryzen 3’s 3200G, 2200G, 1200 series; Ryzen 5’s 3400G, 3500, 3500X,3600, 3600X 2400G, 2600, 2600X; Ryzen 7’s 3800X, 3700X, 3800X, 2700, 2700X and Ryzen 9’s 3900X 3950X.The Ryzen Threadripper processor series consists of the 1900X, 1920X, 2970WX, & 2990WX CPUs. AMD also owns another series called Epyc. They are usually compatible with DDR3 and DDR4 DIMM RAMs. The latest 5th Generation of AMD Ryzen 3, Ryzen 5, Ryzen7 and the Ryzen9 Processors, will support the newest high-speed DDR5 RAM."
+      }
+    ],
+    "bestProcessorShop": {
+      "title": "Buy From the Best Processor Shop in Bangladesh",
+      "description": "Star Tech is the biggest Computer, laptop, and computing component retail and Online shop in Bangladesh. Visit any Star tech shop or our website to get your desired PC with your preferred Processor at the lowest price. We have branches in major cities like Dhaka, Chittagong, Rangpur, Gazipur, and Khulna."
+    }
+  }
+  

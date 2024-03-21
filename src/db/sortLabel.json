@@ -1,0 +1,18 @@
+{
+    "show": {
+        "title": "show",
+        "options": [
+            "10",
+            "20",
+            "30"
+        ]
+    },
+    "sortBy": {
+        "title": "sortBy",
+        "options": [
+            "default",
+            "low to high",
+            "high to low"
+        ]
+    }
+}
