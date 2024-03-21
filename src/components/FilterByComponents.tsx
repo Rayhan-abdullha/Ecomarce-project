@@ -6,8 +6,7 @@ interface PropTypes {
     check: CheckState
 }
 const FilterByComponents = ({ setChecke, check }: PropTypes) => {
-    // eslint-disable-next-line @typescript-eslint/no-unused-vars
-    const [components, setComponents] = useState<{ [key: string]: { id: number; name: string; list: string[] } }>(data.components);
+    const [components] = useState<{ [key: string]: { id: number; name: string; list: string[] } }>(data.components);
 
     function filterProducts(event: React.ChangeEvent<HTMLInputElement>) {
         const checked = event.target.checked;
