@@ -1,17 +1,27 @@
+import { Product } from '../interface/products';
 
-const Pagination = () => {
+const Pagination = ({ products }: { products: Product[] }) => {
 
     return (
-        <nav className="bg-gray-100 py-2">
-            <ul className="list-none p-0 inline-flex">
-                <li className={`cursor-pointer hover:bg-blue-200 py-2 px-3 mr-1 rounded`}>Prev</li>
-                <li className={`cursor-pointer hover:bg-blue-200 py-2 px-3 mr-1 rounded`}>1</li>
-                <li className={`cursor-pointer hover:bg-blue-200 py-2 px-3 mr-1 rounded`}>2</li>
-                <li className={`cursor-pointer hover:bg-blue-200 py-2 px-3 mr-1 rounded`}>3</li>
-                <li className={`cursor-pointer hover:bg-blue-200 py-2 px-3 mr-1 rounded`}>4</li>
-                <li className={`cursor-pointer hover:bg-blue-200 py-2 px-3 mr-1 rounded`}>Next</li>
+        <div className='bg-gray-100 py-2 my-5 border border-gray-200'>
+            <ul className='list-none p-0 inline-flex gap-2'>
+                <li className='cursor-pointer hover:bg-[#EF4A23] py-1 px-3 mr-1 rounded'>
+                    <button className='text-[13px] uppercase font-semibold'>
+                        Prev
+                    </button>
+                </li>
+                {products.map((item: Product, index: number) => (
+                    <li className={`cursor-pointer hover:bg-[#EF4A23] py-1 px-3 rounded ${index === 0 ? 'bg-[#EF4A23]' : ''}`} key={index}>
+                        <a href="" className='text-[13px]'>{index + 1}</a>
+                    </li>
+                ))}
+                <li className='cursor-pointer hover:bg-[#EF4A23] py-1 px-3 mr-1 rounded'>
+                    <button className='text-[12px] uppercase font-semibold'>
+                        Next
+                    </button>
+                </li>
             </ul>
-        </nav>
+        </div>
     );
 };
 

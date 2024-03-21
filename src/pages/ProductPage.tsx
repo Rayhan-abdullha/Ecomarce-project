@@ -21,8 +21,6 @@ const ProductPage = () => {
         if (!Object.keys(checke).length) return products;
         return products.filter(product => {
             if (`${product.brand.name}` in checke['brand']) {
-                console.log(`${product.brand.name}`, checke['brand']);
-
                 return product;
             }
 
@@ -73,7 +71,7 @@ const ProductPage = () => {
                     </div>
                     <div className="product-list">
                         <SortByComponents products={products} dispatchProduct={setProducts}
-                            setShowFilter={setShowFilter} setChecke={setChecke} check={checke}
+                            setShowFilter={setShowFilter}
                         />
                         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 mt-2 gap-2">
                             {
@@ -82,7 +80,7 @@ const ProductPage = () => {
                                 ))
                             }
                         </div>
-                        <Pagination />
+                        <Pagination products={filteredProducts} />
                         <CategoryDescription />
                     </div>
                 </div>

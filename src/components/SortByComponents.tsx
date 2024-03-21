@@ -1,15 +1,12 @@
 import sortLabel from '../db/sortLabel.json'
-import { CheckState } from '../interface';
 import { Product } from '../interface/products';
 type PropsType = {
     products: Product[],
     setShowFilter: React.Dispatch<React.SetStateAction<boolean>>,
     dispatchProduct: React.Dispatch<React.SetStateAction<Product[]>>,
-    setChecke: React.Dispatch<React.SetStateAction<CheckState>>,
-    check: CheckState
 }
 
-const SortByComponents = ({ products, dispatchProduct, setShowFilter, setChecke, check }: PropsType) => {
+const SortByComponents = ({ products, dispatchProduct, setShowFilter }: PropsType) => {
     const handleSort = (event: React.ChangeEvent<HTMLSelectElement>) => {
         const sortOrder = event.target.value;
         let sorted = [...products];
