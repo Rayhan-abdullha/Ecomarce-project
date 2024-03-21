@@ -73,7 +73,7 @@ const ProductPage = () => {
                     </div>
                     <div className="product-list">
                         <SortByComponents products={products} dispatchProduct={setProducts}
-                            setShowFilter={setShowFilter}
+                            setShowFilter={setShowFilter} setChecke={setChecke} check={checke}
                         />
                         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 mt-2 gap-2">
                             {

@@ -1,6 +1,7 @@
-[
-    {
-        "id": 1,
-        "breadcrumb": "P"
+{
+    "category": {
+        "title": "desktop",
+        "subcategory": "processor",
+        "brand": ["amd", "intel"]
     }
-]
+}

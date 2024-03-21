@@ -4,7 +4,7 @@ const Navbar = () => {
     return (
         <div className="bg-white py-[10px] border-b border-gray-200">
             <nav className='container mx-auto px-3'>
-                <ul className='flex gap-4'>
+                <ul className='flex gap-4 flex-wrap'>
                     {
                         navlist.map((item) => (
                             <NavList key={item.id} item={item.cat} />
