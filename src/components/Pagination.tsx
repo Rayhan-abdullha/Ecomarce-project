@@ -10,7 +10,7 @@ const Pagination = ({ products }: { products: Product[] }) => {
                         Prev
                     </button>
                 </li>
-                {products.map((item: Product, index: number) => (
+                {products.map((_item: Product, index: number) => (
                     <li className={`cursor-pointer hover:bg-[#EF4A23] py-1 px-3 rounded ${index === 0 ? 'bg-[#EF4A23]' : ''}`} key={index}>
                         <a href="" className='text-[13px]'>{index + 1}</a>
                     </li>
