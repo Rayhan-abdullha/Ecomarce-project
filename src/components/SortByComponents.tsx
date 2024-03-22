@@ -26,7 +26,7 @@ const SortByComponents = ({ products, dispatchProduct, setShowFilter }: PropsTyp
     return (
         <div className="flex justify-between items-center bg-white p-2">
             <h3 className="text-[14px] font-semibold hidden md:block">Gaming PC</h3>
-            <div onClick={handleShow} className="md:hidden flex items-center cursor-pointer bg-gray-200 p-1 rounded-sm">
+            <div onClick={handleShow} className="md:hidden flex items-center cursor-pointer bg-gray-200 p-1 rounded-sm absolute top-[10px] right-[12px] md:static">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="feather feather-align-center"><line x1="18" y1="10" x2="6" y2="10"></line><line x1="21" y1="6" x2="3" y2="6"></line><line x1="21" y1="14" x2="3" y2="14"></line><line x1="18" y1="18" x2="6" y2="18"></line></svg>
                 <span>Filter</span>
             </div>

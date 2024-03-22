@@ -8,25 +8,27 @@ import priceRange from '../db/priceRange.json'
 import Pagination from "../components/Pagination"
 import CategoryDescription from "../components/CategoryDiscription"
 import { Product } from "../interface/products"
-import { CheckState } from "../interface"
+import { filterPropertyType } from "../interface"
 
 const ProductPage = () => {
     const [showFilter, setShowFilter] = useState<boolean>(false)
     const [innerWidth, setinnerWidth] = useState<number>(768)
     const [products, setProducts] = useState<Product[]>(pd)
-    const [filterProperty, setFilterProperty] = useState<CheckState>({
+
+    // will be filter name, category, subcategory, and price
+    const [filterProperty, setFilterProperty] = useState<filterPropertyType>({
         price: {
             from: 0,
             to: 50000
         }
     });
-
-    const filterProducts = () => {
-
+    // filter funtionality
+    const filterProducts = (filterProperty: filterPropertyType) => {
+        console.log(filterProperty);
         return products
     };
 
-    const filteredProducts = filterProducts();
+    const filteredProducts = filterProducts(filterProperty);
     function handleClose() {
         setShowFilter(false)
     }
@@ -55,7 +57,7 @@ const ProductPage = () => {
             <div className={`overlay ${showFilter && innerWidth <= 768 ? 'block' : 'hidden'}`}></div>
             <div className="container mx-auto mt-5 px-3">
                 <div className="flex gap-3">
-                    <div className={`filter-by-components fixed top-0 ${showFilter && innerWidth <= 768 ? 'right-0' : 'right-[-130%]'} md:static bg-slate-100 z-[999] md:z-0 h-full overflow-auto transition-right duration-300 ease-in-out`}>
+                    <div className={`filter-by-components fixed top-0 ${showFilter && innerWidth <= 768 ? 'right-0' : 'right-[-150%]'} md:static bg-slate-100 z-[999] md:z-0 h-full overflow-auto transition-right duration-300 ease-in-out`}>
                         <div className={`close bg-white flex justify-end ${showFilter && innerWidth <= 768 ? 'block' : 'hidden'}`}>
                             <svg onClick={handleClose} xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="feather feather-x hover:transform hover:scale-125 cursor-pointer m-4"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
                         </div>

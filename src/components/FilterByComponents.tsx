@@ -1,9 +1,9 @@
 import { useState } from 'react';
 import data from '../db/filterByComponentsBrand.json';
-import { CheckState } from '../interface';
+import { filterPropertyType } from '../interface';
 interface PropTypes {
-    setChecke: React.Dispatch<React.SetStateAction<CheckState>>
-    check: CheckState
+    setChecke: React.Dispatch<React.SetStateAction<filterPropertyType>>
+    check: filterPropertyType
 }
 const FilterByComponents = ({ setChecke, check }: PropTypes) => {
     const [components] = useState<{ [key: string]: { id: number; name: string; list: string[] } }>(data.components);
