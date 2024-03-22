@@ -1,5 +1,5 @@
 export interface CheckState {
     [key: string]: {
-        [key: string]: boolean;
-    };
+        [key: string]: boolean | number
+    }
 }

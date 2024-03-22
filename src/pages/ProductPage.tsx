@@ -14,17 +14,16 @@ const ProductPage = () => {
     const [showFilter, setShowFilter] = useState<boolean>(false)
     const [innerWidth, setinnerWidth] = useState<number>(768)
     const [products, setProducts] = useState<Product[]>(pd)
-    const [priceFrom, setPriceFrom] = useState<number>(0)
-    const [checke, setChecke] = useState<CheckState>({});
+    const [filterProperty, setFilterProperty] = useState<CheckState>({
+        price: {
+            from: 0,
+            to: 50000
+        }
+    });
 
     const filterProducts = () => {
-        if (!Object.keys(checke).length) return products;
-        return products.filter(product => {
-            if (`${product.brand.name}` in checke['brand']) {
-                return product;
-            }
 
-        });
+        return products
     };
 
     const filteredProducts = filterProducts();
@@ -32,20 +31,25 @@ const ProductPage = () => {
         setShowFilter(false)
     }
 
-    function handlePriceRange(e: React.ChangeEvent<HTMLInputElement>) {
-        setPriceFrom(parseInt(e.target.value))
+    function handleRangePrice(e: React.ChangeEvent<HTMLInputElement>) {
+        const { name, value } = e.target;
+        setFilterProperty({
+            ...filterProperty,
+            price: {
+                ...filterProperty.price,
+                [name]: parseInt(value)
+            }
+        })
     }
-
     useEffect(() => {
-        const handleResize = () => {
+        function handleResize() {
             setinnerWidth(window.innerWidth);
-        };
+        }
         window.addEventListener('resize', handleResize);
         return () => {
             window.removeEventListener('resize', handleResize);
-        };
+        }
     }, []);
-    console.log(checke)
     return (
         <>
             <div className={`overlay ${showFilter && innerWidth <= 768 ? 'block' : 'hidden'}`}></div>
@@ -57,17 +61,21 @@ const ProductPage = () => {
                         </div>
                         <div className="bg-white p-4 mb-2">
                             <h2 className="font-semibold mb-2">{priceRange.label}</h2>
-                            <input onChange={handlePriceRange} type="range" min="0" max="100" value={priceFrom} className="w-full mb-4" />
+                            <div className="relative">
+                                <input onChange={handleRangePrice} name="from" type="range" min="0" max="50000" value={filterProperty.price.from?.toString()} className="w-full mb-2" />
+                                <input onChange={handleRangePrice} name="to" type="range" min="0" max="50000" value={filterProperty.price.to?.toString()} className="right-0 w-full mb-4" />
+                            </div>
+
                             <div className="flex justify-between gap-2">
                                 <label>
-                                    <input readOnly className="w-full p-1 outline-none border border-gray-300" type="text" value={priceFrom} />
+                                    <input readOnly className="w-full p-1 outline-none border border-gray-300" type="text" value={filterProperty.price.from?.toString()} />
                                 </label>
                                 <label >
-                                    <input readOnly className="w-full p-1 outline-none border border-gray-300" type="text" value={priceFrom} />
+                                    <input readOnly className="w-full p-1 outline-none border border-gray-300" type="text" value={filterProperty.price.to?.toString()} />
                                 </label>
                             </div>
                         </div>
-                        <FilterByComponents setChecke={setChecke} check={checke} />
+                        <FilterByComponents setChecke={setFilterProperty} check={filterProperty} />
                     </div>
                     <div className="product-list">
                         <SortByComponents products={products} dispatchProduct={setProducts}
