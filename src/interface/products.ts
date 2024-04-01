@@ -1,102 +1,76 @@
-interface Category {
+export interface Product {
+  id: string;
+  name: string;
+  description: string[];
+  productCode: number;
+  category: {
     id: string;
     name: string;
-}
-
-interface Brand {
+  };
+  brand: {
     id: string;
     name: string;
-}
-
-interface Discount {
-    percentage: number;
-    startDate: string;
-    endDate: string;
-}
-
-interface Price {
+  };
+  model: {
+    id: string;
+    name: string;
+  };
+  price: {
     current: number;
-    currency: string;
     regular: number;
-    discount: Discount;
-}
-
-interface Image {
+    currency: string;
+    discount: {
+      percentage: number;
+      startDate: string;
+      endDate: string;
+    };
+  };
+  images: {
     id: string;
     url: string;
     alt: string;
-}
-
-interface Variant {
+  }[];
+  basicInformation: {
+    name: string;
+    value: string;
+  }[];
+  memorySpecifications: {
+    name: string;
+    value: string;
+  }[];
+  GraphicsSpecifications: {
+    name: string;
+    value: string;
+  }[];
+  warrantyInformation: {
+    name: string;
+    value: string;
+  }[];
+  listOfObjects: {
+    name: string;
+    description: string
+  }[];
+  variants: {
     id: string;
     name: string;
     options: string[];
-}
-
-interface Inventory {
+  }[];
+  inventory: {
     inStock: boolean;
     quantity: number;
-}
-
-interface Rating {
+  };
+  ratings: {
     average: number;
     count: number;
-}
-
-interface Review {
+  };
+  reviews: {
     id: string;
     author: string;
     rating: number;
     title: string;
     content: string;
     date: string;
-}
-
-interface BasicInformation {
-    name: string;
-    value: string;
-  }
-  
-  interface MemorySpecification {
-    name: string;
-    value: string;
-  }
-  
-  interface GraphicsSpecification {
-    name: string;
-    value: string;
-  }
-  
-  interface WarrantyInformation {
-    name: string;
-    value: string;
-  }
-  
-  interface ListOfObject {
-    name: string;
-    description: string;
-    "PCIe 4.0 & 5.0"?: string; // Optional since it's not present in all objects
-  }
-
-  export interface Product {
-    id: string;
-    name: string;
-    productCode: number;
-    description: string[];
-    category: Category;
-    brand: Brand;
-    model: {id: string, name: string}
-    price: Price;
-      images: Image[];
-      basicInformation: BasicInformation[];
-    memorySpecifications: MemorySpecification[];
-    GraphicsSpecifications: GraphicsSpecification[];
-    warrantyInformation: WarrantyInformation[];
-    listOfObjects: ListOfObject[];
-    variants: Variant[];
-    inventory: Inventory;
-    ratings: Rating;
-    reviews: Review[];
-    recentlyViewed: boolean;
-    addedToCart: boolean;
+  }[];
+  recentlyViewed: boolean;
+  addedToCart: boolean;
 }

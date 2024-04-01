@@ -12,7 +12,6 @@ const Specification = ({
   GraphicsSpecifications,
   warrantyInformation,
 }: PropsType) => {
-  // console.log(basicInformation[0].name);
 
   return (
     <section className=" bg-[#F2F4F8] mx-4">

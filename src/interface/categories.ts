@@ -15,17 +15,8 @@ interface Component {
     id: number;
     cat: string;
     components: {
-      availability: Component;
-      brand: Component;
-      ram: Component;
-      ssd: Component;
-      hdd: Component;
-      graphics: Component;
-      series?: Component;
-      processor_model?: Component;
-      display_type?: Component;
-      ram_size?: Component;
-    };
+      [key: string]: Component | undefined
+    },
     sub_category: SubCategory;
   }
   

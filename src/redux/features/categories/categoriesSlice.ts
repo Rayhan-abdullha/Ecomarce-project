@@ -1,4 +1,5 @@
 import { createSlice } from '@reduxjs/toolkit'
+import categories from '../../../db/categoryList.json'
 import { Category } from '../../../interface/categories'
 
 export interface CategoryState {
@@ -6,7 +7,7 @@ export interface CategoryState {
 }
 
 const initialState: CategoryState = {
-  catItems: [],
+  catItems: categories
 }
 
 export const categoriestSlice = createSlice({

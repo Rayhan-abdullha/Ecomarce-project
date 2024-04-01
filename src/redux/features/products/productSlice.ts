@@ -1,26 +1,23 @@
 import { PayloadAction, createSlice } from '@reduxjs/toolkit'
-import { Product } from '../../../interface/products'
 import pd from '../../../db/product.json'
+import { Product } from '../../../interface/products'
 
-export interface CounterState {
+export interface ProductType {
   products: Product[]
 }
 
-const initialState: CounterState = {
-    products: [...pd],
+const initialState: ProductType = {
+    products: pd
 }
 
 export const productSlice = createSlice({
   name: 'products',
   initialState,
   reducers: {
-    allProducts: (state) => {
-        state.products = [...pd]
-    },
       sortByPrice: (state, action: PayloadAction<Product[]>) => {
         state.products = action.payload
     }
   },
 })
-export const { allProducts, sortByPrice } = productSlice.actions
+export const { sortByPrice } = productSlice.actions
 export default productSlice.reducer

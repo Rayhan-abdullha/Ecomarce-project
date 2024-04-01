@@ -1,15 +1,18 @@
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import sortLabel from '../../db/sortLabel.json'
-import { RootState } from '../../redux/store';
 import { sortByPrice } from '../../redux/features/products/productSlice';
+import { useParams } from 'react-router-dom';
+import { Product } from '../../interface/products';
 
 type PropsType = {
     setShowFilter: React.Dispatch<React.SetStateAction<boolean>>,
+    products: Product[]
 }
 
-const TopBar = ({ setShowFilter }: PropsType) => {
-    const products = useSelector((state: RootState) => state.products.products)
+const TopBar = ({ setShowFilter, products }: PropsType) => {
+
     const dispatch = useDispatch()
+    const params = useParams()
 
     const handleSort = (event: React.ChangeEvent<HTMLSelectElement>) => {
         const sortOrder = event.target.value;
@@ -29,7 +32,7 @@ const TopBar = ({ setShowFilter }: PropsType) => {
     }
     return (
         <div className="flex justify-between items-center bg-white py-3 px-4 shadow-sm">
-            <h3 className="text-[16px] font-semibold hidden lg:block">Desktop</h3>
+            <h3 className="text-[16px] font-semibold hidden lg:block capitalize">{params?.category}</h3>
             <div onClick={handleShow} className="lg:hidden flex items-center cursor-pointer bg-gray-200 p-1 rounded-sm">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="feather feather-align-center"><line x1="18" y1="10" x2="6" y2="10"></line><line x1="21" y1="6" x2="3" y2="6"></line><line x1="21" y1="14" x2="3" y2="14"></line><line x1="18" y1="18" x2="6" y2="18"></line></svg>
                 <span>Filter</span>
