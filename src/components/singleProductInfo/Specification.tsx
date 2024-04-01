@@ -107,10 +107,10 @@ const Specification = ({
                     warrantyInformation?.map((item, index: number) => (
                       <div key={index} className=" lg:flex gap-2 py-2 border-b hover:bg-[#f2f4f8]">
                         <span className="text-sm block w-[250px] text-[#666666] capitalize">
-                          {warrantyInformation[0].name}
+                          {item.name}
                         </span>
                         <span className=" text-sm font-bold">
-                          {warrantyInformation[0].value}
+                          {item.value}
                         </span>
                       </div>
                     ))
