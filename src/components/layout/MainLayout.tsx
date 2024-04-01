@@ -1,13 +1,17 @@
 import Navbar from '../header/Navbar'
 import Footer from "../footer/Footer"
 import { Outlet } from "react-router-dom"
-import Top from '../header/Top'
+import TopHeader from './../header/Top';
+import Cart from '../cart/Cart';
+import ProductCompare from '../UI/ProductCompare';
 const MainLayout = () => {
     return (
         <>
-            <Top />
+            <TopHeader />
             <Navbar />
             <Outlet />
+            <Cart />
+            <ProductCompare />
             <Footer />
         </>
     )

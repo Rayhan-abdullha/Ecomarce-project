@@ -1,4 +1,3 @@
-// import singleProductInfoData from "../db/Data.json";
 import ProductInfo from "../components/singleProductInfo/ProductInfo";
 import Specification from "../components/singleProductInfo/Specification";
 import ProductDescription from "../components/singleProductInfo/ProductDescription";

@@ -1,19 +1,18 @@
-import { useSelector } from "react-redux"
-import { Product } from "../interface/products"
-import { RootState } from "../redux/store"
-import ProductList from "../components/products/ProductItem"
+import FeaturesProducts from "../components/home/FeaturesProducts"
+import FeaturedCategory from "../components/home/FeaturedCategory"
+import Slider from "../components/home/Slider"
+import Services from "../components/home/Services"
 
 const Home = () => {
-    const products = useSelector((state: RootState) => state.products.products)
     return (
-        <div className="max-w-[1290px] mx-auto px-4">
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-3 mt-3">
-                {
-                    products?.map((item: Product) => (
-                        <ProductList key={item.id} item={item} />
-                    ))
-                }
-            </div>
+        <div className="max-w-[1290px] mx-auto px-4 pt-4 mt-14 mg:mt-12 lg:mt-0 md:pt-7 pb-[60px] md:pb-[100px]">
+            <Slider />
+            <Services />
+            <section className="sliding_text rounded-full p-2 bg-white mt-7">
+                <marquee>1st April, Monday, all outlets are open. Additionally, our online activities are open and operational.</marquee>
+            </section>
+            <FeaturedCategory />
+            <FeaturesProducts />
         </div>
     )
 }

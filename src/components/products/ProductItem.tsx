@@ -3,7 +3,7 @@ import { Product } from "../../interface/products"
 interface PropTypes {
     item: Product
 }
-const ProductList = ({ item }: PropTypes) => {
+const ProductItem = ({ item }: PropTypes) => {
     return (
         <div className="bg-white single-product rounded-md shadow-sm px-3">
             <div className="p-4">
@@ -45,4 +45,4 @@ const ProductList = ({ item }: PropTypes) => {
     )
 }
 
-export default ProductList
+export default ProductItem

@@ -835,8 +835,7 @@
         "listOfObjects": [
           {
             "name": "Intel Pentium Gold G7400 Alder Lake Processor",
-            "description": "Intel 12th Gen Pentium Gold G7400 Alder Lake Processor is a CPU from Intel. Intel Pentium Gold G7400 12th gen Processor turns your desktop computer system or data server into a more efficient machine. This 12th generation 3.7 GHz processor features two Performance cores and 6MB of cache with support for up to four threads, providing the power to run and multitask a variety of applications. The Pentium Gold G7400 also includes support for PCI Express 5.0 and dual-channel DDR5 memory in addition to having integrated Intel UHD 710 Graphics. An Intel Laminar RS1 thermal solution is included.",
-            "PCIe 4.0 & 5.0": "Intel 12th Gen Pentium Gold G7400 Alder Lake Processor supports up to four PCIe 4.0 and sixteen PCIe 5.0 lanes, delivering 20 lanes in total for exceptional data throughput with compatible devices."
+            "description": "Intel 12th Gen Pentium Gold G7400 Alder Lake Processor is a CPU from Intel. Intel Pentium Gold G7400 12th gen Processor turns your desktop computer system or data server into a more efficient machine. This 12th generation 3.7 GHz processor features two Performance cores and 6MB of cache with support for up to four threads, providing the power to run and multitask a variety of applications. The Pentium Gold G7400 also includes support for PCI Express 5.0 and dual-channel DDR5 memory in addition to having integrated Intel UHD 710 Graphics. An Intel Laminar RS1 thermal solution is included."
           },
           {
             "name": "PCIe 4.0 & 5.0",

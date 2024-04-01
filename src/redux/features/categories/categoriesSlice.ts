@@ -1,12 +1,11 @@
 import { createSlice } from '@reduxjs/toolkit'
 import categories from '../../../db/categoryList.json'
-import { Category } from '../../../interface/categories'
 
-export interface CounterState {
-  catItems: Category[]
+export interface CategoryState {
+  catItems: unknown[]
 }
 
-const initialState: CounterState = {
+const initialState: CategoryState = {
   catItems: categories,
 }
 

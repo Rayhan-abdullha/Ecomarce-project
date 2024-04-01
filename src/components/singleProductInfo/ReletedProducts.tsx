@@ -1,4 +1,3 @@
-import React from "react";
 import { FaSquarePlus } from "react-icons/fa6";
 import { useSelector } from "react-redux";
 import { RootState } from "../../redux/store";

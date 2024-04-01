@@ -13,7 +13,7 @@ const Footer = () => {
                 <div className="flex flex-col lg:flex-row gap-6">
                     <div className="lg:w-1/4 mx-auto">
                         <h3 className="text-[12px] lg:text-[14px] font-medium uppercase tracking-[4px] text-white mb-10 ">Support</h3>
-                        <a href="#" className="flex items-center border border-[#666666] pl-5 w-[300px] lg:w-[250px] py-2 rounded-full">
+                        <a href="#" className="flex items-center border border-[#666666] pl-5 w-[300px] lg:w-[250px] py-2 rounded-full hover:border hover:border-[#ef4a23]">
                             <div className="flex gap-2 items-center">
                                 <div className="text-white text-xl">
                                     <BsTelephone />
@@ -26,7 +26,7 @@ const Footer = () => {
                                 </div>
                             </div>
                         </a>
-                        <a href="#" className="flex items-center border border-[#666666] pl-5 py-1 w-[300px] lg:w-[250px] h-[75px] rounded-full my-4">
+                        <a href="#" className="flex items-center border border-[#666666] hover:border hover:border-[#ef4a23] pl-5 py-1 w-[300px] lg:w-[250px] h-[75px] rounded-full my-4">
                             <div className="flex gap-2 items-center">
                                 <div className="text-white text-xl">
                                     <FaLocationDot />
@@ -56,7 +56,7 @@ const Footer = () => {
                         </ul>
                     </div>
                     <div className="lg:1/4">
-                        <h3 className="text-[11px] lg:text-[14px] font-medium uppercase tracking-[4px] text-white mt-5">Stay Connected</h3>
+                        <h3 className="text-[11px] lg:text-[14px] font-medium uppercase tracking-[4px] mb-10 text-white">Stay Connected</h3>
                         <h3 className="text-[16px] text-white my-4 font-semibold">Star Tech Ltd</h3>
                         <p className="text-[#666] text-[14px] my-3">
                             Head Office: 28 Kazi Nazrul Islam <br />
@@ -75,9 +75,9 @@ const Footer = () => {
                         </small>
                     </div>
                     <div className="flex text-white gap-2 text-2xl">
-                        <FaFacebook />
-                        <SiYoutubemusic />
-                        <AiFillTwitterCircle />
+                        <a href="#" className="hover:text-[#ef4a23]"><FaFacebook /></a>
+                        <a href="#" className="hover:text-[#ef4a23]"><SiYoutubemusic /></a>
+                        <a href="#" className="hover:text-[#ef4a23]"><AiFillTwitterCircle /></a>
                     </div>
                 </div>
                 <div className="flex justify-between my-4">

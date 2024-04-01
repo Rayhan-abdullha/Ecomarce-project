@@ -9,27 +9,27 @@
               "list": ["In Stock", "Pre Order", "Out of Stock"]
           },
           "brand": {
-              "id": 1,
+              "id": 2,
               "name": "Brand",
               "list": ["Intel", "AMD", "Apple"]
           },
           "ram": {
-              "id": 1,
+              "id": 3,
               "name": "Ram",
               "list": ["2 GB", "4 GB", "8 GB", "16 GB", "32 GB", "64 GB"]
           },
           "ssd": {
-              "id": 1,
+              "id": 4,
               "name": "SSD",
               "list": ["126GB", "256GB", "512GB", "1TB", "2TB" ]
           },
           "hdd": {
-              "id": 1,
+              "id": 5,
               "name": "HDD",
               "list": ["1TB"]
           },
           "graphics": {
-              "id": 1,
+              "id": 5,
               "name": "Graphics",
               "list": ["Dedicated 2GB", "Dedicated 4GB", "Dedicated 6GB", "Dedicated 8GB"]
           }

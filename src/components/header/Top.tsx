@@ -2,11 +2,12 @@ import { Link } from "react-router-dom";
 import { FaBox } from "react-icons/fa";
 import { AiFillThunderbolt } from "react-icons/ai";
 import { MdAccountBox } from "react-icons/md";
+import { BiSearch } from "react-icons/bi";
 
-const ResNavBar = () => {
+const TopHeader = () => {
     return (
-        <div className="bg-slate-950">
-            <div className="max-w-[1290px] mx-auto px-4 flex justify-between items-center gap-4 py-[14px]">
+        <div className="bg-slate-950 fixed top-0 left-0 right-0 lg:sticky">
+            <div className="max-w-[1290px] mx-auto px-4 flex justify-between items-center gap-4 py-[7px] lg:py-[14px]">
                 <a href="/" className="logo w-[100%] lg:w-[10%] xl:w-[15%]">
                     <img
                         className="w-[90px] lg:w-[120px] mx-auto"
@@ -14,6 +15,9 @@ const ResNavBar = () => {
                         alt=""
                     />
                 </a>
+                <div className="block lg:hidden w-[40px] h-[30px] relative top-[5px] right-[40px] cursor-pointer">
+                    <BiSearch className="text-white w-[80%] h-[80%]" />
+                </div>
                 <div className="hidden lg:block lg:w-[35%] xl:w-[40%]">
                     <input
                         type="text"
@@ -55,7 +59,7 @@ const ResNavBar = () => {
                             </div>
                         </span>
                     </Link>
-                    <div className="text-white rounded-md font-bold">
+                    <div className="text-white rounded-md font-bold hover:bg-[blue]">
                         <Link className="btn-animation block px-4 rounded-md" to="#">PC Builder</Link>
                     </div>
                 </div>
@@ -64,4 +68,4 @@ const ResNavBar = () => {
     );
 };
 
-export default ResNavBar;
+export default TopHeader;
