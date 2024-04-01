@@ -9,7 +9,7 @@ const Home = () => {
             <Slider />
             <Services />
             <section className="sliding_text rounded-full p-2 bg-white mt-7">
-                <marquee>1st April, Monday, all outlets are open. Additionally, our online activities are open and operational.</marquee>
+                <p className="text-center text-[15px] hidden xl:block">1st April, Monday, all outlets are open. Additionally, our online activities are open and operational.</p>
             </section>
             <FeaturedCategory />
             <FeaturesProducts />
