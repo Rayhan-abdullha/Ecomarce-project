@@ -27,8 +27,9 @@ const SingleProductDetails = () => {
             inventory={pd?.inventory}
             brand={pd?.brand.name}
             description={pd?.description} />
-          <div className="lg:flex mt-5">
+          <div className="lg:flex mt-5 gap-5">
             <div className="">
+              
               <Specification
                 basicInformation={pd?.basicInformation}
                 memorySpecifications={pd?.memorySpecifications}
