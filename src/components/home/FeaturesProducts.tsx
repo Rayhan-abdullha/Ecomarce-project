@@ -13,8 +13,8 @@ function FeaturesProducts() {
             </section>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-3 mt-3">
                 {
-                    products?.map((item: Product) => (
-                        <FeaturesProductsItem key={item.id} item={item} />
+                    products?.map((item: Product, index: number) => (
+                        <FeaturesProductsItem key={index} item={item} />
                     ))
                 }
             </div>
