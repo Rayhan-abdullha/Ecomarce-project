@@ -11,7 +11,7 @@ const AfterHeader = () => {
             <div className="max-w-[1290px] mx-auto px-4">
                 <Breadcrumb />
                 {
-                    (!params?.sub_cat_name && !params?.productId) && <div className="mt-5">
+                    (!params?.sub_cat_name && !params?.productId) && <div className="mt-5 hidden lg:block">
                         <div className="mb-5">
                             <h2 className="text-2xl mb-3 text-[#3749bb]">{cat?.sub_category?.label}</h2>
                             <p className="text-sm">{cat?.sub_category?.desc}</p>

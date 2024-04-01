@@ -6,7 +6,7 @@ import { BiSearch } from "react-icons/bi";
 
 const TopHeader = () => {
     return (
-        <div className="bg-slate-950 fixed top-0 left-0 right-0 lg:sticky">
+        <div className="bg-slate-950 fixed top-0 left-0 right-0 lg:sticky z-[999]">
             <div className="max-w-[1290px] mx-auto px-4 flex justify-between items-center gap-4 py-[7px] lg:py-[14px]">
                 <a href="/" className="logo w-[100%] lg:w-[10%] xl:w-[15%]">
                     <img

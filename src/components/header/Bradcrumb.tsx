@@ -2,7 +2,7 @@ import { useParams, Link } from "react-router-dom"
 const Breadcrumb = () => {
     const params = useParams();
     return (
-        <div className="flex items-center">
+        <div className="flex items-center mt-[50px] lg:mt-0">
             <Link
                 to="/" className="inline-flex items-center text-sm font-medium text-gray-700 hover:text-blue-600 dark:text-gray-400 dark:hover:text-white">
                 <svg className="w-3 h-3 me-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">

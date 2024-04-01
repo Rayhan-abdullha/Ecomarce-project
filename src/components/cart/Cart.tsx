@@ -2,7 +2,7 @@ import { BsBagPlus } from "react-icons/bs"
 
 const Cart = () => {
     return (
-        <div className="fixed top-[-2px] right-2 lg:bottom-5 lg:right-5 lg:top-[92%] cursor-pointer">
+        <div className="fixed top-[-2px] right-2 lg:bottom-5 lg:right-5 lg:top-[92%] cursor-pointer z-[999]">
             <div className="lg:bg-[#081621] lg:border lg:border-[#666666] w-[60px] h-[60px] lg:hover:bg-[#3749BB] 500 rounded-md flex justify-center items-center">
                 <BsBagPlus className="text-white w-[40%] h-[40%]" />
             </div>
