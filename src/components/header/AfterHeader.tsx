@@ -5,7 +5,7 @@ import { useParams } from "react-router-dom"
 const AfterHeader = () => {
     const params = useParams()
     const categories = useSelector((state: RootState) => state.categoriesList.catItems)
-    const cat = categories.find(item => item.cat.toLowerCase() === params?.category?.toLowerCase())
+    const cat = categories.find((item) => item.cat.toLowerCase() === params?.category?.toLowerCase())
     return (
         <div className="bg-white py-4 shadow-sm">
             <div className="max-w-[1290px] mx-auto px-4">
