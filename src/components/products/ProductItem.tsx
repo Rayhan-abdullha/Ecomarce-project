@@ -5,11 +5,11 @@ interface PropTypes {
 }
 const ProductItem = ({ item }: PropTypes) => {
     return (
-        <div className="bg-white single-product rounded-md shadow-sm px-3">
-            <div className="p-4">
-                <img src="https://www.startech.com.bd/image/cache/catalog/star-pc/intel/10th-gen-i5-10400f-02-228x228.webp" alt="Gaming Desktop PC with various components" className="mb-3 m-auto" />
+        <div className="single-product rounded-md">
+            <div className="p-4 bg-white mb-[2px]">
+                <img src={item.images[0].url} alt="Gaming Desktop PC with various components" className="mb-3 m-auto" />
             </div>
-            <div className="p-5">
+            <div className="px-8 py-5 bg-white shadow-sm">
                 <div>
                     <Link className="font-semibold text-[15px] mb-6 block cursor-pointer hover:underline hover:text-[#ef4a23]" to={`/categories/${item.category.name}/${item.id}`}>{item.name}</Link>
                     <ul className="text-gray-600 text-sm mb-[40px] list-disc flex flex-col gap-2">
