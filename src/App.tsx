@@ -1,7 +1,7 @@
 
-import Navbar from './components/Navbar'
+import Navbar from './components/header/Navbar'
 import ProductPage from './pages/ProductPage'
-import AfterHeader from './components/AfterHeader'
+import AfterHeader from './components/header/AfterHeader'
 const App = () => {
   return (
     <div>

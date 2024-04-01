@@ -1,0 +1,323 @@
+[
+    {
+      "id": 1,
+      "cat": "desktop",
+      "components": {
+          "availability": {
+              "id": 1,
+              "name": "Availability",
+              "list": ["In Stock", "Pre Order", "Out of Stock"]
+          },
+          "brand": {
+              "id": 1,
+              "name": "Brand",
+              "list": ["Intel", "AMD", "Apple"]
+          },
+          "ram": {
+              "id": 1,
+              "name": "Ram",
+              "list": ["2 GB", "4 GB", "8 GB", "16 GB", "32 GB", "64 GB"]
+          },
+          "ssd": {
+              "id": 1,
+              "name": "SSD",
+              "list": ["126GB", "256GB", "512GB", "1TB", "2TB" ]
+          },
+          "hdd": {
+              "id": 1,
+              "name": "HDD",
+              "list": ["1TB"]
+          },
+          "graphics": {
+              "id": 1,
+              "name": "Graphics",
+              "list": ["Dedicated 2GB", "Dedicated 4GB", "Dedicated 6GB", "Dedicated 8GB"]
+          }
+      } ,
+      "sub_category": {
+        "id": "sub_category_id_1",
+        "label": "Desktop PC Price in Bangladesh (BD)",
+        "desc": "Desktop PC Price in Bangladesh starts from BDT 25000 and depending on the configuration the price may go up to BDT 600,000 or more, At Star Tech you can get the latest configured custom Desktop PC, Gaming PC, Brand PC, All-in-One PC, Portable Mini PC etc. Browse below and Order yours now!",
+        "list": [
+          "desktop offer",
+          "star pc",
+          "all in one pc",
+          "brand pc",
+          "portable mini pc",
+          "apple mac mini"
+        ]
+      }},
+    {
+      "id": 2,
+    "cat": "laptop",
+    "components": {
+      "availability": {
+          "id": 1,
+          "name": "Availability",
+          "list": ["In Stock", "Pre Order", "Out of Stock"]
+      },
+      "brand": {
+          "id": 2,
+          "name": "Brand",
+          "list": ["Apple", "HP", "Lenovo", "Dell"]
+      },
+      "series": {
+          "id": 3,
+          "name": "Series",
+          "list": ["Consumer Laptops", "Business Laptops", "Gaming Laptops"]
+      },
+      "processor_model": {
+          "id": 4,
+          "name": "Processor Model",
+          "list": ["Intel CDC", "AMD Ryzen 5", "AMD Ryzen 7", "AMD Ryzen 9"]
+      },
+      "display_type": {
+          "id": 5,
+          "name": "Display Type",
+          "list": ["LED", "OLED", "AMOLED"]
+      },
+      "ram_size": {
+          "id": 6,
+          "name": "RAM Size",
+          "list": ["8 GB", "16 GB", "32 GB", "64 GB", "128 GB"]
+      },
+      "ssd": {
+        "id": 7,
+        "name": "SSD",
+        "list": ["126GB", "256GB", "512GB", "1TB", "2TB" ]
+    },
+    "hdd": {
+        "id": 8,
+        "name": "HDD",
+        "list": ["1TB"]
+    },
+    "graphics": {
+        "id": 9,
+        "name": "Graphics",
+        "list": ["Dedicated 2GB", "Dedicated 4GB", "Dedicated 6GB", "Dedicated 8GB"]
+    }
+
+  },
+    "sub_category": {
+        "id": "sub_category_id_1",
+        "label": "Desktop PC Price in Bangladesh (BD)",
+        "desc": "Desktop PC Price in Bangladesh starts from BDT 25000 and depending on the configuration the price may go up to BDT 600,000 or more, At Star Tech you can get the latest configured custom Desktop PC, Gaming PC, Brand PC, All-in-One PC, Portable Mini PC etc. Browse below and Order yours now!",
+        "list": [
+          "all laptop",
+          "dell laptop",
+          "hp laptop",
+          "brand laptop"
+        ]
+      }},
+    {
+      "id": 3,
+      "cat": "monitor",
+      "components": {
+        "availability": {
+            "id": 1,
+            "name": "Availability",
+            "list": ["In Stock", "Pre Order", "Out of Stock"]
+        },
+        "brand": {
+            "id": 1,
+            "name": "Brand",
+            "list": ["Intel", "AMD", "Apple"]
+        },
+        "ram": {
+            "id": 1,
+            "name": "Ram",
+            "list": ["2 GB", "4 GB", "8 GB", "16 GB", "32 GB", "64 GB"]
+        },
+        "ssd": {
+            "id": 1,
+            "name": "SSD",
+            "list": ["126GB", "256GB", "512GB", "1TB", "2TB" ]
+        },
+        "hdd": {
+            "id": 1,
+            "name": "HDD",
+            "list": ["1TB"]
+        },
+        "graphics": {
+            "id": 1,
+            "name": "Graphics",
+            "list": ["Dedicated 2GB", "Dedicated 4GB", "Dedicated 6GB", "Dedicated 8GB"]
+        }
+    } ,
+       "sub_category": {
+        "id": "sub_category_id_1",
+        "label": "Desktop PC Price in Bangladesh (BD)",
+        "desc": "Desktop PC Price in Bangladesh starts from BDT 25000 and depending on the configuration the price may go up to BDT 600,000 or more, At Star Tech you can get the latest configured custom Desktop PC, Gaming PC, Brand PC, All-in-One PC, Portable Mini PC etc. Browse below and Order yours now!",
+        "list": [
+          "asus",
+          "hp",
+          "dell"
+        ]
+      }},
+    {
+    "id": 4,"cat": "ups", "components": {
+      "availability": {
+          "id": 1,
+          "name": "Availability",
+          "list": ["In Stock", "Pre Order", "Out of Stock"]
+      },
+      "brand": {
+          "id": 1,
+          "name": "Brand",
+          "list": ["Intel", "AMD", "Apple"]
+      },
+      "ram": {
+          "id": 1,
+          "name": "Ram",
+          "list": ["2 GB", "4 GB", "8 GB", "16 GB", "32 GB", "64 GB"]
+      },
+      "ssd": {
+          "id": 1,
+          "name": "SSD",
+          "list": ["126GB", "256GB", "512GB", "1TB", "2TB" ]
+      },
+      "hdd": {
+          "id": 1,
+          "name": "HDD",
+          "list": ["1TB"]
+      },
+      "graphics": {
+          "id": 1,
+          "name": "Graphics",
+          "list": ["Dedicated 2GB", "Dedicated 4GB", "Dedicated 6GB", "Dedicated 8GB"]
+      }
+  } , "sub_category": {
+        "id": "sub_category_id_1",
+        "label": "",
+        "desc": "",
+        "list": [
+        ]
+      }},
+    {
+        "id": 5,"cat": "phone", "components": {
+      "availability": {
+          "id": 1,
+          "name": "Availability",
+          "list": ["In Stock", "Pre Order", "Out of Stock"]
+      },
+      "brand": {
+          "id": 1,
+          "name": "Brand",
+          "list": ["Intel", "AMD", "Apple"]
+      },
+      "ram": {
+          "id": 1,
+          "name": "Ram",
+          "list": ["2 GB", "4 GB", "8 GB", "16 GB", "32 GB", "64 GB"]
+      },
+      "ssd": {
+          "id": 1,
+          "name": "SSD",
+          "list": ["126GB", "256GB", "512GB", "1TB", "2TB" ]
+      },
+      "hdd": {
+          "id": 1,
+          "name": "HDD",
+          "list": ["1TB"]
+      },
+      "graphics": {
+          "id": 1,
+          "name": "Graphics",
+          "list": ["Dedicated 2GB", "Dedicated 4GB", "Dedicated 6GB", "Dedicated 8GB"]
+      }
+  } , "sub_category": {
+        "id": "sub_category_id_1",
+        "label": "Phone PC Price in Bangladesh (BD)",
+        "desc": "Phone PC Price in Bangladesh starts from BDT 25000 and depending on the configuration the price may go up to BDT 600,000 or more, At Star Tech you can get the latest configured custom Desktop PC, Gaming PC, Brand PC, All-in-One PC, Portable Mini PC etc. Browse below and Order yours now!",
+        "list": [
+          "iphone",
+          "samsung",
+          "nokia"
+        ]
+      }},
+    {
+        "id": 7,"cat": "components",  "components": {
+      "availability": {
+          "id": 1,
+          "name": "Availability",
+          "list": ["In Stock", "Pre Order", "Out of Stock"]
+      },
+      "brand": {
+          "id": 1,
+          "name": "Brand",
+          "list": ["Intel", "AMD", "Apple"]
+      },
+      "ram": {
+          "id": 1,
+          "name": "Ram",
+          "list": ["2 GB", "4 GB", "8 GB", "16 GB", "32 GB", "64 GB"]
+      },
+      "ssd": {
+          "id": 1,
+          "name": "SSD",
+          "list": ["126GB", "256GB", "512GB", "1TB", "2TB" ]
+      },
+      "hdd": {
+          "id": 1,
+          "name": "HDD",
+          "list": ["1TB"]
+      },
+      "graphics": {
+          "id": 1,
+          "name": "Graphics",
+          "list": ["Dedicated 2GB", "Dedicated 4GB", "Dedicated 6GB", "Dedicated 8GB"]
+      }
+  } ,"sub_category": {
+        "id": "sub_category_id_1",
+        "label": "",
+        "desc": "",
+        "list": [
+          "processor",
+          "cpu cooler",
+          "motherboard"
+        ]
+      }},
+    {
+        "id": 8,"cat": "camera",  "components": {
+      "availability": {
+          "id": 1,
+          "name": "Availability",
+          "list": ["In Stock", "Pre Order", "Out of Stock"]
+      },
+      "brand": {
+          "id": 1,
+          "name": "Brand",
+          "list": ["Intel", "AMD", "Apple"]
+      },
+      "ram": {
+          "id": 1,
+          "name": "Ram",
+          "list": ["2 GB", "4 GB", "8 GB", "16 GB", "32 GB", "64 GB"]
+      },
+      "ssd": {
+          "id": 1,
+          "name": "SSD",
+          "list": ["126GB", "256GB", "512GB", "1TB", "2TB" ]
+      },
+      "hdd": {
+          "id": 1,
+          "name": "HDD",
+          "list": ["1TB"]
+      },
+      "graphics": {
+          "id": 1,
+          "name": "Graphics",
+          "list": ["Dedicated 2GB", "Dedicated 4GB", "Dedicated 6GB", "Dedicated 8GB"]
+      }
+  } ,"sub_category": {
+        "id": "sub_category_id_1",
+        "label": "Camera PC Price in Bangladesh (BD)",
+        "desc": "Camera PC Price in Bangladesh starts from BDT 25000 and depending on the configuration the price may go up to BDT 600,000 or more, At Star Tech you can get the latest configured custom Desktop PC, Gaming PC, Brand PC, All-in-One PC, Portable Mini PC etc. Browse below and Order yours now!",
+        "list": [
+          "camera offer",
+          "star camera",
+          "all in one camera",
+          "brand camera"
+        ]
+      }}
+]

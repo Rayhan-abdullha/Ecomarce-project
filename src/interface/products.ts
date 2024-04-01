@@ -17,6 +17,7 @@ interface Discount {
 interface Price {
     current: number;
     currency: string;
+    regular: number;
     discount: Discount;
 }
 
@@ -51,14 +52,47 @@ interface Review {
     date: string;
 }
 
-export interface Product {
+interface BasicInformation {
+    name: string;
+    value: string;
+  }
+  
+  interface MemorySpecification {
+    name: string;
+    value: string;
+  }
+  
+  interface GraphicsSpecification {
+    name: string;
+    value: string;
+  }
+  
+  interface WarrantyInformation {
+    name: string;
+    value: string;
+  }
+  
+  interface ListOfObject {
+    name: string;
+    description: string;
+    "PCIe 4.0 & 5.0"?: string; // Optional since it's not present in all objects
+  }
+
+  export interface Product {
     id: string;
     name: string;
+    productCode: number;
     description: string[];
     category: Category;
     brand: Brand;
+    model: {id: string, name: string}
     price: Price;
-    images: Image[];
+      images: Image[];
+      basicInformation: BasicInformation[];
+    memorySpecifications: MemorySpecification[];
+    GraphicsSpecifications: GraphicsSpecification[];
+    warrantyInformation: WarrantyInformation[];
+    listOfObjects: ListOfObject[];
     variants: Variant[];
     inventory: Inventory;
     ratings: Rating;
@@ -66,4 +100,3 @@ export interface Product {
     recentlyViewed: boolean;
     addedToCart: boolean;
 }
-

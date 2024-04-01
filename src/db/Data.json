@@ -1,0 +1,403 @@
+[
+  {
+    "id": "product_id_12356",
+    "name": "Intel Core i5-10400F 10th Gen Gaming Desktop PC",
+    "description": [
+      "This is a detailed description of the product.",
+      "BIOSTAR H610MHP Micro ATX Motherboard",
+      "PNY XLR8 8GB DDR4 3200MHz Desktop Gaming RAM",
+      "Team MP33 256GB M.2 PCIe SSD"
+    ],
+    "category": {
+      "id": "category_id_1",
+      "name": "desktop"
+    },
+    "brand": {
+      "id": "brand_id_1",
+      "name": "intel"
+    },
+    "price": {
+      "current": 99.99,
+      "currency": "USD",
+      "discount": {
+        "percentage": 10,
+        "startDate": "2023-03-01",
+        "endDate": "2023-03-31"
+      }
+    },
+    "images": [
+      {
+        "id": "image_id_1",
+        "url": "https://www.startech.com.bd/image/cache/catalog/star-pc/intel/10th-gen-i5-10400f-02-228x228.webp",
+        "alt": "Product Image 1"
+      },
+      {
+        "id": "image_id_2",
+        "url": "https://example.com/product_image_2.jpg",
+        "alt": "Product Image 2"
+      }
+    ],
+    "variants": [
+      {
+        "id": "variant_id_1",
+        "name": "Size",
+        "options": ["Small", "Medium", "Large"]
+      },
+      {
+        "id": "variant_id_2",
+        "name": "Color",
+        "options": ["Red", "Blue", "Green"]
+      }
+    ],
+    "inventory": {
+      "inStock": true,
+      "quantity": 50
+    },
+    "ratings": {
+      "average": 4.2,
+      "count": 120
+    },
+    "basicInformation": [
+      {
+        "name": "baseFrequency",
+        "value": "3.70 GHz"
+      },
+      {
+        "name": "cache",
+        "value": "6 MB"
+      },
+      {
+        "name": "cores",
+        "value": "2"
+      },
+      {
+        "name": "threads",
+        "value": "4"
+      },
+      {
+        "name": "defaultTDP",
+        "value": "46W"
+      }
+    ],
+    "memorySpecifications": [
+      {
+        "name": "maximumSize",
+        "value": "128 GB"
+      },
+      {
+        "name": "type",
+        "value": "Up to DDR5 4800 MT/s Up to DDR4 3200 MT/s"
+      },
+      {
+        "name": "maxNumberOfChannels",
+        "value": "2"
+      }
+    ],
+    "GraphicsSpecifications": [
+      {
+        "name": "processorGraphics",
+        "value": "Intel UHD Graphics 710"
+      },
+      {
+        "name": "maxDynamicFrequency",
+        "value": "1.35 GHz"
+      },
+      {
+        "name": "maxResolution",
+        "value": "HDMI: 4096 x 2160 @ 60Hz DP: 7680 x 4320 @ 60Hz eDP - Integrated Flat Panel: 5120 x 3200 @ 120Hz"
+      }
+    ],
+    "warrantyInformation": [
+      {
+        "name": "manufacturingWarranty",
+        "value": "03 years warranty (No Warranty for Fan or Cooler)"
+      }
+    ],
+    "listOfObjects": [
+      {
+        "name": "Intel Pentium Gold G7400 Alder Lake Processor",
+        "description": "Intel 12th Gen Pentium Gold G7400 Alder Lake Processor is a CPU from Intel. Intel Pentium Gold G7400 12th gen Processor turns your desktop computer system or data server into a more efficient machine. This 12th generation 3.7 GHz processor features two Performance cores and 6MB of cache with support for up to four threads, providing the power to run and multitask a variety of applications. The Pentium Gold G7400 also includes support for PCI Express 5.0 and dual-channel DDR5 memory in addition to having integrated Intel UHD 710 Graphics. An Intel Laminar RS1 thermal solution is included.",
+        "PCIe 4.0 & 5.0": "Intel 12th Gen Pentium Gold G7400 Alder Lake Processor supports up to four PCIe 4.0 and sixteen PCIe 5.0 lanes, delivering 20 lanes in total for exceptional data throughput with compatible devices."
+      },
+      {
+        "name": "PCIe 4.0 & 5.0",
+        "description": "Intel 12th Gen Pentium Gold G7400 Alder Lake Processor supports up to four PCIe 4.0 and sixteen PCIe 5.0 lanes, delivering 20 lanes in total for exceptional data throughput with compatible devices."
+      },
+      {
+        "name": "Integrated Intel UHD Graphics",
+        "description": "Intel Pentium Gold G7400 12th gen Alder Lake Processor has The integrated Intel UHD 710 Graphics. The integrated Intel UHD 710 Graphics delivers rich 3D performance with high-quality visuals."
+      },
+      {
+        "name": "Intel Deep Learning Boost",
+        "description": "Intel Pentium Gold G7400 12th gen Alder Lake Processor has Intel Deep Learning Boost Accelerates AI inference to improve performance for deep learning workloads."
+      },
+      {
+        "name": "Gaussian & Neural Accelerator 3.0",
+        "description": "Intel 12th Gen Pentium Gold G7400 Alder Lake Processor comes with The Gaussian and Neural Accelerator 3.0 (GNA) technology to help with noise suppression while enhancing background blurring during video chats.Intel 12th Gen Pentium Gold G7400 Alder Lake Processor offers a 3-year warranty (No Warranty for Fan or Cooler)."
+      },
+      {
+        "name": "What is the price of Intel Pentium Gold G7400 Alder Lake Processor in Bangladesh?",
+        "description": "The latest price of Intel Pentium Gold G7400 Alder Lake Processor in Bangladesh is 6,999৳. You can buy the Intel Pentium Gold G7400 Alder Lake Processor at best price from our website or visit any of our showrooms."
+      }
+    ],
+
+    "reviews": [
+      {
+        "id": "review_id_1",
+        "author": "John Doe",
+        "rating": 5,
+        "title": "Great product!",
+        "content": "This is a great product. I highly recommend it.",
+        "date": "2023-02-15T10:30:00Z"
+      },
+      {
+        "id": "review_id_2",
+        "author": "Jane Smith",
+        "rating": 3,
+        "title": "Average product",
+        "content": "The product is okay, but not as good as I expected.",
+        "date": "2023-01-20T14:45:00Z"
+      }
+    ],
+    "recentlyViewed": true,
+    "addedToCart": false
+  },
+  {
+    "id": "product_id_124",
+    "name": "AMD Ryzen 5 2400G Budget Gaming Desktop PC",
+    "description": [
+      "AMD Ryzen 5 2400G Desktop Processor with Radeon RX Vega 11 Graphics",
+      "MSI A520M-A Pro AM4 AMD Micro-ATX Motherboard",
+      "Team T-Force VULCAN TUF Gaming Alliance 8GB 3200MHz DDR4 Desktop RAM"
+    ],
+    "category": {
+      "id": "category_id_1",
+      "name": "desktop"
+    },
+    "brand": {
+      "id": "brand_id_1",
+      "name": "AMD"
+    },
+    "price": {
+      "current": 5645,
+      "currency": "USD",
+      "discount": {
+        "percentage": 10,
+        "startDate": "2023-03-01",
+        "endDate": "2023-03-31"
+      }
+    },
+    "images": [
+      {
+        "id": "image_id_1",
+        "url": "https://www.startech.com.bd/image/cache/catalog/desktop-pc/desktop-offer/ryzen-5-2400g-budget-desktop-pc-03-228x228.webp",
+        "alt": "Product Image 1"
+      },
+      {
+        "id": "image_id_2",
+        "url": "https://example.com/product_image_2.jpg",
+        "alt": "Product Image 2"
+      }
+    ],
+    "variants": [
+      {
+        "id": "variant_id_1",
+        "name": "Size",
+        "options": ["Small", "Medium", "Large"]
+      },
+      {
+        "id": "variant_id_2",
+        "name": "Color",
+        "options": ["Red", "Blue", "Green"]
+      }
+    ],
+    "inventory": {
+      "inStock": true,
+      "quantity": 50
+    },
+    "ratings": {
+      "average": 4.2,
+      "count": 120
+    },
+    "reviews": [
+      {
+        "id": "review_id_1",
+        "author": "John Doe",
+        "rating": 5,
+        "title": "Great product!",
+        "content": "This is a great product. I highly recommend it.",
+        "date": "2023-02-15T10:30:00Z"
+      },
+      {
+        "id": "review_id_2",
+        "author": "Jane Smith",
+        "rating": 3,
+        "title": "Average product",
+        "content": "The product is okay, but not as good as I expected.",
+        "date": "2023-01-20T14:45:00Z"
+      }
+    ],
+    "recentlyViewed": true,
+    "addedToCart": false
+  },
+  {
+    "id": "product_id_125",
+    "name": "Intel 10th Gen Core i3-10100 Desktop PC",
+    "description": [
+      "Intel Pentium Gold G7400 Alder Lake Processor",
+      "MSI PRO H610M-E DDR4 mATX Motherboard",
+      "Kimtigo WOLFRINE 8GB 3200MHz DDR4 UDIMM Desktop RAM",
+      "Western Digital Green SN350 240GB M.2 NVMe Gen3 SSD"
+    ],
+    "category": {
+      "id": "category_id_1",
+      "name": "desktop"
+    },
+    "brand": {
+      "id": "brand_id_1",
+      "name": "intel"
+    },
+    "price": {
+      "current": 22999,
+      "currency": "USD",
+      "discount": {
+        "percentage": 10,
+        "startDate": "2023-03-01",
+        "endDate": "2023-03-31"
+      }
+    },
+    "images": [
+      {
+        "id": "image_id_1",
+        "url": "https://www.startech.com.bd/image/cache/catalog/desktop-pc/desktop-offer/ryzen-5-2400g-budget-desktop-pc-03-228x228.webp",
+        "alt": "Product Image 1"
+      },
+      {
+        "id": "image_id_2",
+        "url": "https://example.com/product_image_2.jpg",
+        "alt": "Product Image 2"
+      }
+    ],
+    "variants": [
+      {
+        "id": "variant_id_1",
+        "name": "Size",
+        "options": ["Small", "Medium", "Large"]
+      },
+      {
+        "id": "variant_id_2",
+        "name": "Color",
+        "options": ["Red", "Blue", "Green"]
+      }
+    ],
+    "inventory": {
+      "inStock": true,
+      "quantity": 50
+    },
+    "ratings": {
+      "average": 4.2,
+      "count": 120
+    },
+    "reviews": [
+      {
+        "id": "review_id_1",
+        "author": "John Doe",
+        "rating": 5,
+        "title": "Great product!",
+        "content": "This is a great product. I highly recommend it.",
+        "date": "2023-02-15T10:30:00Z"
+      },
+      {
+        "id": "review_id_2",
+        "author": "Jane Smith",
+        "rating": 3,
+        "title": "Average product",
+        "content": "The product is okay, but not as good as I expected.",
+        "date": "2023-01-20T14:45:00Z"
+      }
+    ],
+    "recentlyViewed": true,
+    "addedToCart": false
+  },
+  {
+    "id": "product_id_12596",
+    "name": "Lenovo IdeaPad D330 10IGL Celeron N4020 10.1 HD Detachable 2-in-1 Touch Laptop",
+    "description": [
+      "MPN: 82H0001VIN",
+      "Model: IdeaPad D330 10IGL",
+      "Processor: Intel Celeron N4020 (4M Cache,1.10 GHz up to 2.80 GHz)",
+      "RAM: 4GB DDR4 Storage: 128GB eMMC SSD",
+      "Display: 10.1' (1280 x 800) HD Touchscreen",
+      "Features: Touch, Type-C, Detachable"
+    ],
+    "category": {
+      "id": "category_id_1",
+      "name": "laptop"
+    },
+    "brand": {
+      "id": "brand_id_1",
+      "name": "lenovo"
+    },
+    "price": {
+      "current": 3565,
+      "currency": "USD",
+      "discount": {
+        "percentage": 10,
+        "startDate": "2023-03-01",
+        "endDate": "2023-03-31"
+      }
+    },
+    "images": [
+      {
+        "id": "image_id_1",
+        "url": "https://www.startech.com.bd/image/cache/catalog/laptop/lenovo/d330/d330-2-228x228.jpg",
+        "alt": "Product Image 1"
+      },
+      {
+        "id": "image_id_2",
+        "url": "https://example.com/product_image_2.jpg",
+        "alt": "Product Image 2"
+      }
+    ],
+    "variants": [
+      {
+        "id": "variant_id_1",
+        "name": "Size",
+        "options": ["Small", "Medium", "Large"]
+      },
+      {
+        "id": "variant_id_2",
+        "name": "Color",
+        "options": ["Red", "Blue", "Green"]
+      }
+    ],
+    "inventory": {
+      "inStock": true,
+      "quantity": 50
+    },
+    "ratings": {
+      "average": 4.2,
+      "count": 120
+    },
+    "reviews": [
+      {
+        "id": "review_id_1",
+        "author": "John Doe",
+        "rating": 5,
+        "title": "Great product!",
+        "content": "This is a great product. I highly recommend it.",
+        "date": "2023-02-15T10:30:00Z"
+      },
+      {
+        "id": "review_id_2",
+        "author": "Jane Smith",
+        "rating": 3,
+        "title": "Average product",
+        "content": "The product is okay, but not as good as I expected.",
+        "date": "2023-01-20T14:45:00Z"
+      }
+    ],
+    "recentlyViewed": true,
+    "addedToCart": false
+  }
+]
