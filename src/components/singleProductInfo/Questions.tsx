@@ -1,7 +1,7 @@
 import { MdTextsms } from "react-icons/md";
 const Questions = () => {
   return (
-    <section className=" mx-4">
+    <section className="">
       <div className="p-4 bg-white rounded shadow">
         <div className="flex flex-col lg:flex-row lg:justify-between gap-3">
           <div>

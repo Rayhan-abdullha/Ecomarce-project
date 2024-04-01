@@ -7,7 +7,7 @@ const Reviews = () => {
     setState(true)
   };
   return (
-    <section className=" mx-4 my-5">
+    <section className="my-5">
       <div className="p-4 bg-white rounded shadow">
         <div className="flex flex-col gap-3 lg:flex-row lg:justify-between">
           <div>

@@ -7,7 +7,7 @@ interface PropsType {
 }
 const ProductDescription = ({ listOfObjects }: PropsType) => {
   return (
-    <section className=" mx-4 my-6">
+    <section className="my-6">
       <div className="">
         <div className="bg-white p-3 rounded-lg shadow-lg">
           <h2 className="text-xl font-bold mb-2">Description</h2>

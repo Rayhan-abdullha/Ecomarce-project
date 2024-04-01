@@ -14,7 +14,7 @@ const Specification = ({
 }: PropsType) => {
 
   return (
-    <section className=" bg-[#F2F4F8] mx-4">
+    <section className=" bg-[#F2F4F8]">
       <div className="">
         <div className="w-full">
           <div className=" text-sm gap-3 flex flex-wrap my-5">
