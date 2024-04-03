@@ -12,6 +12,9 @@ const Navbar = () => {
     }
 
     useEffect(() => {
+        if (innerWidth >= 1024) {
+            setShowNav(false)
+        }
         function handleResize() {
             setinnerWidth(window.innerWidth);
         }
@@ -19,7 +22,7 @@ const Navbar = () => {
         return () => {
             window.removeEventListener('resize', handleResize);
         }
-    }, []);
+    }, [innerWidth]);
     return (
         <>
             <div className={`overlay ${showNav && innerWidth <= 1024 ? 'block' : 'hidden'}`}></div>
@@ -34,7 +37,7 @@ const Navbar = () => {
 
                             {
                                 cat.map((item) => (
-                                    <NavList key={item.id} item={item.cat} />
+                                    <NavList key={item.id} item={item.cat} setHideNav={setShowNav} />
                                 ))
                             }
                         </ul>

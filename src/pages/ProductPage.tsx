@@ -11,6 +11,7 @@ import { useSelector } from "react-redux"
 import { RootState } from "../redux/store"
 import AfterHeader from "../components/header/AfterHeader"
 import { useParams } from "react-router-dom"
+import { useScrollToTop } from "../lib/scrollTop"
 const ProductPage = () => {
     const [showFilter, setShowFilter] = useState<boolean>(false)
     const [innerWidth, setinnerWidth] = useState<number>(1024)
@@ -58,11 +59,18 @@ const ProductPage = () => {
             }
         })
     }
+
+    // scroll top automaticly
+    useScrollToTop()
+
     useEffect(() => {
         if (showFilter && innerWidth <= 1024) {
             document.body.style.overflow = 'hidden'
         } else {
             document.body.style.overflow = 'auto'
+        }
+        if (innerWidth > 1025) {
+            setShowFilter(false)
         }
         function handleResize() {
             setinnerWidth(window.innerWidth);

@@ -8,6 +8,7 @@ import { useParams } from "react-router-dom"
 import AfterHeader from "../components/header/AfterHeader";
 import { useSelector } from "react-redux";
 import { RootState } from "../redux/store";
+import { useScrollToTop } from "../lib/scrollTop";
 
 const SingleProductDetails = () => {
 
@@ -16,6 +17,8 @@ const SingleProductDetails = () => {
   // productId
   const params = useParams()
   const pd = products?.find(item => item.id.toLowerCase() === params?.productId?.toLowerCase())
+
+  useScrollToTop()
   return (
     <>
       <AfterHeader />
@@ -29,7 +32,7 @@ const SingleProductDetails = () => {
             description={pd?.description} />
           <div className="lg:flex mt-5 gap-5">
             <div className="">
-              
+
               <Specification
                 basicInformation={pd?.basicInformation}
                 memorySpecifications={pd?.memorySpecifications}

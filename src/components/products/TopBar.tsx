@@ -3,7 +3,6 @@ import sortLabel from '../../db/sortLabel.json'
 import { sortByPrice } from '../../redux/features/products/productSlice';
 import { useParams } from 'react-router-dom';
 import { Product } from '../../interface/products';
-
 type PropsType = {
     setShowFilter: React.Dispatch<React.SetStateAction<boolean>>,
     products: Product[]
@@ -30,6 +29,8 @@ const TopBar = ({ setShowFilter, products }: PropsType) => {
     const handleShow = () => {
         setShowFilter((prev: boolean) => !prev)
     }
+
+
     return (
         <div className="flex justify-between items-center bg-white py-3 px-4 shadow-sm">
             <h3 className="text-[16px] font-semibold hidden lg:block capitalize">{params?.category}</h3>
