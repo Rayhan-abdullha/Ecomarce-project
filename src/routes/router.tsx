@@ -2,9 +2,9 @@ import { createBrowserRouter } from "react-router-dom";
 import ProductPage from "../pages/ProductPage";
 import ErrorPage from "../error-page";
 import SingleProductDetails from "../pages/SingleProductDetails";
-import NotFound from '../components/notfound/NotFound'
 import MainLayout from "../components/layout/MainLayout";
 import Home from "../pages/Home";
+import NotFound from "../pages/NotFound";
 const router = createBrowserRouter([
     {
         element: <MainLayout />,
@@ -17,7 +17,8 @@ const router = createBrowserRouter([
                         element: <Home />,
                         errorElement: <ErrorPage />
                     }
-                ]
+                ],
+
             },
             {
                 path: "/categories/:category",
@@ -43,14 +44,19 @@ const router = createBrowserRouter([
                         path: ':componanet',
                         element: <SingleProductDetails />
                     }
+
                 ]
             },
             {
                 path: '/cart',
                 element: <h1>Cart</h1>
+            }, {
+                path: "*",
+                element: <NotFound />
             }
 
-        ]
+        ],
+
     },
     {
         path: "*",

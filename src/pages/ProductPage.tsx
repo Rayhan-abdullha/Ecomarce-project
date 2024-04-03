@@ -16,7 +16,7 @@ const ProductPage = () => {
     const [showFilter, setShowFilter] = useState<boolean>(false)
     const [innerWidth, setinnerWidth] = useState<number>(1024)
 
-    const products = useSelector((state: RootState) => state.products.products)
+    const products = useSelector((state: RootState) => state?.products.products)
     const cat = useParams()
 
     // will be filter name, category, subcategory, and price
