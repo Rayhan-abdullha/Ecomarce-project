@@ -1,10 +1,11 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { FaBox } from "react-icons/fa";
 import { AiFillThunderbolt } from "react-icons/ai";
 import { MdAccountBox } from "react-icons/md";
 import { BiSearch } from "react-icons/bi";
 
 const TopHeader = () => {
+    const navigate = useNavigate()
     return (
         <div className="bg-slate-950 fixed top-0 left-0 right-0 lg:sticky z-[999]">
             <div className="max-w-[1290px] mx-auto px-4 flex justify-between items-center gap-4 py-[7px] lg:py-[14px]">
@@ -31,7 +32,7 @@ const TopHeader = () => {
                             <div className="text-orange-400 mx-2 text-2xl">
                                 <FaBox />
                             </div>
-                            <div className="ac-content">
+                            <div className="ac-content" onClick={() => {navigate('/information/offers')}}>
                                 <h5 className="text-[14px]">Offers</h5>
                                 <p className="text-[12px] text-[#ffffff80]">Latest Offers</p>
                             </div>

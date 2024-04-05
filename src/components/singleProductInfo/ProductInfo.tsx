@@ -1,6 +1,8 @@
 import { FaMinus } from "react-icons/fa6";
 import { FaPlus } from "react-icons/fa6";
-// import { RiNumber1 } from "react-icons/ri";
+import { useDispatch } from "react-redux";
+import { addToCart } from "../../redux/features/cart/cartSlice";
+
 interface PropsType {
   name: string | undefined
   price: number | undefined
@@ -11,6 +13,7 @@ interface PropsType {
   } | undefined
   brand: string | undefined
   description: string[] | undefined
+  pdId: string | undefined
 }
 const ProductInfo = ({
   name,
@@ -19,8 +22,14 @@ const ProductInfo = ({
   inventory,
   brand,
   description,
+  pdId
 }: PropsType) => {
-  //   console.log(images);
+  const dispatch = useDispatch()
+
+  const handleAddToCart = () => {
+    dispatch(addToCart(pdId))
+  }
+
   return (
     <section className=" bg-white">
       <div className="max-w-container py-6 mx-4 md:flex">
@@ -137,7 +146,7 @@ const ProductInfo = ({
             <button className=" bg-[#4054d6] w-full flex-auto hover:bg-[#2a378f] delay-100 transition-all text-sm text-white capitalize font-semibold px-3 py-2 rounded">
               Buy now
             </button>
-            <button className=" bg-[#4054d6] w-full flex-auto  hover:bg-[#2a378f] delay-100 transition-all text-sm text-white capitalize font-semibold px-3 rounded py-2">
+            <button onClick={handleAddToCart} className=" bg-[#4054d6] w-full flex-auto  hover:bg-[#2a378f] delay-100 transition-all text-sm text-white capitalize font-semibold px-3 rounded py-2">
               add to cart
             </button>
           </div>

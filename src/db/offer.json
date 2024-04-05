@@ -1,0 +1,37 @@
+[
+    {
+        "id": "1",
+        "name": "eid utshob desktop deal",
+        "text": "build your dream pC & get exciting gifts!",
+        "date": {
+            "start": "2023-04-01",
+            "end": "2023-04-30"
+        },
+        "status": "online",
+        "url": "https://www.startech.com.bd/image/cache/catalog/offer-page/eid-utshab-desktop-deal-400x400.png"
+
+    },
+    {
+        "id": "2",
+        "name": "eid utshob laptop deal",
+        "text": "build your dream laptop & get exciting gifts!",
+        "date": {
+            "start": "2023-04-01",
+            "end": "2023-04-30"
+        },
+        "status": "all outlet",
+        
+        "url": "https://www.startech.com.bd/image/cache/catalog/offer-page/eid-utshab-desktop-deal-400x400.png"
+    },
+    {
+        "id": "3",
+        "name": "eid utshob mobile deal",
+        "text": "enjoy exciting discounts on selected drone!",
+        "date": {
+            "start": "2023-04-01",
+            "end": "2023-04-30"
+        },
+        "status": "online",
+        "url": "https://www.startech.com.bd/image/cache/catalog/offer-page/eid-utshab-desktop-deal-400x400.png"
+    }
+]

@@ -29,7 +29,8 @@ const SingleProductDetails = () => {
             images={pd?.images[0].url}
             inventory={pd?.inventory}
             brand={pd?.brand.name}
-            description={pd?.description} />
+            description={pd?.description}
+            pdId={ pd?.id} />
           <div className="lg:flex mt-5 gap-5">
             <div className="">
 

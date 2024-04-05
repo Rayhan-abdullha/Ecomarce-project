@@ -87,7 +87,7 @@ const ProductPage = () => {
             <div className={`overlay ${showFilter && innerWidth <= 1024 ? 'block' : 'hidden'}`}></div>
             <div className="max-w-[1290px] mx-auto mt-5 px-4">
                 <div className="flex gap-5">
-                    <div className={`filter-by-components w-2/3 md:w-[40%] lg:w-[25%] fixed top-0 z-[99999] ${showFilter && innerWidth <= 1024 ? 'right-0 z-[999999]' : 'right-[-150%]'} lg:static bg-slate-100 z-[999] lg:z-0 h-full overflow-auto transition-right duration-300 ease-in-out`}>
+                    <div className={`filter-by-components w-2/3 md:w-[40%] lg:w-[25%] fixed top-0 z-[99999] ${showFilter && innerWidth <= 1024 ? 'right-0' : 'right-[-150%]'} lg:static bg-slate-100 lg:z-0 h-full overflow-auto transition-right duration-300 ease-in-out`}>
                         <div className={`close bg-white flex justify-end ${showFilter && innerWidth <= 1024 ? 'block' : 'hidden'}`}>
                             <svg onClick={handleClose} xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="feather feather-x hover:transform hover:scale-125 cursor-pointer m-4"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
                         </div>

@@ -5,6 +5,11 @@ import SingleProductDetails from "../pages/SingleProductDetails";
 import MainLayout from "../components/layout/MainLayout";
 import Home from "../pages/Home";
 import NotFound from "../pages/NotFound";
+import CartPage from "../pages/CartPage";
+import OfferPage from "../pages/OfferPage";
+import OfferInfoDetails from "../pages/OfferInfoDetails";
+import AuthPage from '../pages/AuthPage'
+
 const router = createBrowserRouter([
     {
         element: <MainLayout />,
@@ -48,15 +53,31 @@ const router = createBrowserRouter([
                 ]
             },
             {
+                path: "/information/offers",
+                children: [
+                    {
+                        index: true,
+                        element: <OfferPage />
+                    },
+                    {
+                        path: ':offer_name',
+                        element: <OfferInfoDetails />
+                    }
+                ]
+            },
+            {
                 path: '/cart',
-                element: <h1>Cart</h1>
-            }, {
+                element: <CartPage />
+            }, 
+            {
+                path: '/auth/login',
+                element: <AuthPage />
+            }, 
+            {
                 path: "*",
                 element: <NotFound />
-            }
-
+            },
         ],
-
     },
     {
         path: "*",

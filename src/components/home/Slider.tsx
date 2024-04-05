@@ -5,7 +5,7 @@ import { RootState } from "../../redux/store"
 
 function Slider() {
     const [slide, setSlide] = useState<number>(0)
-    const { images } = useSelector((state: RootState) => state.sliders.images)
+    const images = useSelector((state: RootState) => state.sliders.images)
 
     const handleSlide = (val: number) => {
         setSlide(val)

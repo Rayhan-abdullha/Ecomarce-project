@@ -2,13 +2,11 @@ import { createSlice } from '@reduxjs/toolkit'
 import slidersImages from '../../../db/slideImage.json'
 
 export interface SliderType {
-    images: {
-      images: string[]
-  }
+    images: string[]
 }
 
 const initialState: SliderType = {
-    images: slidersImages
+    images: slidersImages.images
 }
 
 export const slidersSlice = createSlice({
