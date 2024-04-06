@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import CompareProdcuts from "./CompareProdcuts"
 import { useSelector } from "react-redux"
 import { RootState } from "../../redux/store"
@@ -10,6 +10,18 @@ function Slider() {
     const handleSlide = (val: number) => {
         setSlide(val)
     }
+
+   useEffect(() =>  {
+        const intervalId = setInterval(() => {
+            setSlide((prevSlide) => (prevSlide === 2 ? 0 : prevSlide + 1));
+        }, 3000);
+
+        return () => {
+            clearInterval(intervalId);
+        };
+    }, []);
+
+    
     return (
         <section className="flex gap-5 md:gap-7 flex-col md:flex-row md:h-[500px]">
             <div className="md:w-3/4 h-[100%] relative">

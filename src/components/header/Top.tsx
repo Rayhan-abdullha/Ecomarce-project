@@ -28,8 +28,8 @@ const TopHeader = () => {
                 </div>
                 <div className="hidden lg:w-[55%] xl:w-[45%] text-white lg:flex lg:gap-4 p-2 justify-end items-center ">
                     <Link to="#">
-                        <div className="flex items-center ">
-                            <div className="text-orange-400 mx-2 text-2xl">
+                        <div className="flex items-center gap-3">
+                            <div className="text-orange-400 mx-2 text-[18px]">
                                 <FaBox />
                             </div>
                             <div className="ac-content" onClick={() => {navigate('/information/offers')}}>
@@ -39,7 +39,7 @@ const TopHeader = () => {
                         </div>
                     </Link>
                     <Link to="#">
-                        <div className="flex items-center ">
+                        <div className="flex items-center gap-3">
                             <div className="text-orange-400 mx-2 text-2xl">
                                 <AiFillThunderbolt className="blink" />
                             </div>
@@ -51,7 +51,7 @@ const TopHeader = () => {
                     </Link>
 
                     <Link to="#">
-                        <span className="flex items-center ">
+                        <span className="flex items-center gap-3">
                             <div className="text-orange-400 mx-2 text-2xl">
                                 <MdAccountBox />
                             </div>
@@ -60,7 +60,7 @@ const TopHeader = () => {
                             </div>
                         </span>
                     </Link>
-                    <div className="text-white rounded-md font-bold hover:bg-[blue]">
+                    <div className="text-white rounded-md font-bold hover:bg-[blue] w-[115px]">
                         <Link className="btn-animation block px-4 rounded-md" to="#">PC Builder</Link>
                     </div>
                 </div>
