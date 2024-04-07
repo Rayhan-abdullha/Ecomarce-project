@@ -46,7 +46,7 @@ const CartDrawer = ({ openDrawer, setOpenDrawer }: PropsType) => {
     const total = subtotal;
 
     return (
-        <div className={`bg-white shadow-xl fixed top-0 right-[${openDrawer ? '0' : '-120%'}] bottom-0 z-[999] w-full sm:w-[400px] transition-all duration-300`}>
+        <div className={`bg-white shadow-xl fixed top-0 ${openDrawer ? 'right-[0]' : 'right-[-120%]'} bottom-0 z-[9999] w-full sm:w-[400px] transition-all duration-300`}>
             <div className="flex items-center justify-between gap-5 bg-black text-white px-5 py-3">
                 <h1 className="uppercase font-semibold">Your Cart</h1>
                 <svg onClick={() => setOpenDrawer(false)} xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="feather feather-x hover:transform hover:scale-125 cursor-pointer"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
