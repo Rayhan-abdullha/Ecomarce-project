@@ -13,7 +13,7 @@ interface PropsType {
   } | undefined
   brand: string | undefined
   description: string[] | undefined
-  pdId: string | undefined
+  pdId: string
 }
 const ProductInfo = ({
   name,
