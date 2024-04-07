@@ -9,7 +9,7 @@ const TopHeader = () => {
     return (
         <div className="bg-slate-950 fixed top-0 left-0 right-0 lg:sticky z-[999]">
             <div className="max-w-[1290px] mx-auto px-4 flex justify-between items-center gap-4 py-[7px] lg:py-[14px]">
-                <a href="/" className="logo w-[100%] lg:w-[10%] xl:w-[15%]">
+                <a href="/" className="logo w-[100%] lg:w-[10%] xl:w-[13%]">
                     <img
                         className="w-[90px] lg:w-[120px] mx-auto"
                         src="https://www.startech.com.bd/image/catalog/logo.png"
@@ -26,7 +26,7 @@ const TopHeader = () => {
                         className="px-2 py-2 w-full rounded-sm outline-none pl-5"
                     />
                 </div>
-                <div className="hidden lg:w-[55%] xl:w-[45%] text-white lg:flex lg:gap-4 p-2 justify-end items-center ">
+                <div className="hidden lg:w-[55%] xl:w-[47%] text-white lg:flex lg:gap-4 p-2 justify-end items-center ">
                     <Link to="#">
                         <div className="flex items-center gap-3">
                             <div className="text-orange-400 mx-2 text-[18px]">
@@ -56,7 +56,8 @@ const TopHeader = () => {
                                 <MdAccountBox />
                             </div>
                             <div className="ac-content">
-                                <h5 className="text">PC Builder</h5>
+                                <h5 className="text-[14px]">Account</h5>
+                                <p className="text-[12px] text-[#ffffff80]">Register or Login</p>
                             </div>
                         </span>
                     </Link>

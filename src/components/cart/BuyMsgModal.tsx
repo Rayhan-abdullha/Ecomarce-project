@@ -6,7 +6,7 @@ import { useSelector } from "react-redux"
 import { RootState } from "../../redux/store"
 type PropsType = {
   setOpenModal: React.Dispatch<React.SetStateAction<boolean>>
-  item: Product
+  item: Product | {id: string, name: string}
 }
 const ByMessageModal = ({ setOpenModal, item }: PropsType) => {
   const cart = useSelector((state: RootState) => state.cart)

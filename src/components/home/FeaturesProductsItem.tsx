@@ -8,7 +8,7 @@ const FeaturesProductsItem = ({ item }: { item: Product }) => {
                 <span className="mark text-[13px] px-2 py-0">Earn Point: 100</span>
             </div>
             <div className="bg-white p-4 rounded-md">
-                <img src="https://www.startech.com.bd/image/cache/catalog/star-pc/intel/10th-gen-i5-10400f-02-228x228.webp" alt="Gaming Desktop PC with various components" className="mb-3 m-auto" />
+                <img className="mb-3 m-auto" src={item.images[0].url} alt="notfond"/>
             </div>
             <div className="p-5 bg-white mt-[2px] rounded-md h-[180px]">
                 <Link className="text-[16px] mb-6 block cursor-pointer hover:underline hover:text-[#ef4a23]" to={`/categories/${item.category.name}/${item.id}`}>{item.name}</Link>

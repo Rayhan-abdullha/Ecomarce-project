@@ -20,7 +20,7 @@ const ReletedProducts = () => {
                 <img className="w-full" src={item.images[0].url} alt="notfound" />
               </div>
               <div className="min-w-[120px]">
-                <Link to={`/categories/${item.id}`} className="font-medium text-sm hover:underline hover:text-[#F04A23]">
+                <Link to={`/categories/${item.category.name}/${item.id}`} className="font-medium text-sm hover:underline hover:text-[#F04A23]">
                   {item.name}
                 </Link>
                 <span className=" text-[#F04A23] my-3 inline-block font-semibold">{item.price.current}ট</span>
@@ -47,7 +47,7 @@ const ReletedProducts = () => {
                 <img className="w-full" src={item.images[0].url} alt="notfound" />
               </div>
               <div className="min-w-[120px]">
-                <Link to={`/categories/${item.id}`} className="font-medium text-sm hover:underline hover:text-[#F04A23]">
+                <Link to={`/categories/${item.category.name}/${item.id}`} className="font-medium text-sm hover:underline hover:text-[#F04A23]">
                   {item.name}
                 </Link>
                 <span className=" text-[#F04A23] my-3 inline-block font-semibold">{item.price.current}ট</span>

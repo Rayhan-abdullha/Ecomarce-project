@@ -2,6 +2,8 @@ import { FaMinus } from "react-icons/fa6";
 import { FaPlus } from "react-icons/fa6";
 import { useDispatch } from "react-redux";
 import { addToCart } from "../../redux/features/cart/cartSlice";
+import { useState } from "react";
+import ByMessageModal from "../cart/BuyMsgModal";
 
 interface PropsType {
   name: string
@@ -24,14 +26,20 @@ const ProductInfo = ({
   description,
   pdId
 }: PropsType) => {
+  const [openModal, setOpenModal] = useState<boolean>(false)
   const dispatch = useDispatch()
 
   const handleAddToCart = () => {
     dispatch(addToCart(pdId))
   }
 
+  const handleBuy = () => {
+    setOpenModal(true)
+    dispatch(addToCart(pdId))
+  }
   return (
-    <section className=" bg-white">
+    <>
+      <section className=" bg-white">
       <div className="max-w-container py-6 mx-4 md:flex">
         <div className="md:w-5/12 p-2">
           <img
@@ -82,7 +90,8 @@ const ProductInfo = ({
                 htmlFor="radio"
                 className=" border-2 border-[#edf2f5] w-full  flex gap-3 p-4 rounded lg:basis-[45%] hover:border-blue-500"
               >
-                <input
+                  <input
+                    readOnly
                   type="radio"
                   checked={true}
                   name="radio"
@@ -108,7 +117,7 @@ const ProductInfo = ({
                 htmlFor="radio"
                 className=" border-2 border-[#edf2f5] w-full  flex gap-3 p-4 rounded lg:basis-[55%] hover:border-blue-500"
               >
-                <input type="radio" name="radio" className=" w-5" id="radio" />
+                <input readOnly type="radio" name="radio" className=" w-5" id="radio" />
                 <span className=" pl-4">
                   <span>
                     <span className=" text-xl font-bold mr-2">6,999৳</span>
@@ -132,18 +141,19 @@ const ProductInfo = ({
                 <FaMinus className=" mx-auto text-base cursor-pointer h-5" />
               </span>
               <span className=" flex flex-auto text-center items-start border border-[#edf2f5]">
-                <input
-                  type="number"
-                  name="quantity"
-                  value={1}
-                  className=" w-[40px] h-[40px] text-center"
-                />
+                  <input
+                    readOnly
+                    type="number"
+                    name="quantity"
+                    defaultValue={1}
+                    className=" w-[40px] h-[40px] text-center"
+                  />
               </span>
               <span className="flex flex-auto text-center items-center border border-[#edf2f5] p-2">
                 <FaPlus className="mx-auto text-base cursor-pointer h-5" />
               </span>
             </label>
-            <button className=" bg-[#4054d6] w-full flex-auto hover:bg-[#2a378f] delay-100 transition-all text-sm text-white capitalize font-semibold px-3 py-2 rounded">
+            <button onClick={handleBuy} className="bg-[#4054d6] w-full flex-auto hover:bg-[#2a378f] delay-100 transition-all text-sm text-white capitalize font-semibold px-3 py-2 rounded">
               Buy now
             </button>
             <button onClick={handleAddToCart} className=" bg-[#4054d6] w-full flex-auto  hover:bg-[#2a378f] delay-100 transition-all text-sm text-white capitalize font-semibold px-3 rounded py-2">
@@ -152,7 +162,11 @@ const ProductInfo = ({
           </div>
         </div>
       </div>
-    </section>
+      </section>
+      {
+        openModal && <ByMessageModal setOpenModal={setOpenModal} item={{id: pdId, name}} />
+      }
+    </>
   );
 };
 
