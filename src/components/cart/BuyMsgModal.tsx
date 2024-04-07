@@ -1,10 +1,15 @@
 import { IoMdClose } from "react-icons/io"
 import { MdDone } from "react-icons/md"
-import { useNavigate } from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom"
+import { Product } from "../../interface/products"
+import { useSelector } from "react-redux"
+import { RootState } from "../../redux/store"
 type PropsType = {
   setOpenModal: React.Dispatch<React.SetStateAction<boolean>>
+  item: Product
 }
-const ByMessageModal = ({setOpenModal}: PropsType) => {
+const ByMessageModal = ({ setOpenModal, item }: PropsType) => {
+  const cart = useSelector((state: RootState) => state.cart)
   const navigate = useNavigate()
     return (
         <div className="fixed inset-0 z-50 flex items-center justify-center">
@@ -16,15 +21,15 @@ const ByMessageModal = ({setOpenModal}: PropsType) => {
           
           <MdDone className="absolute top-10 left-5 text-white font-bold block bg-green-500 w-5 h-5 rounded-full"/>
           <div className="flex flex-col sm:flex-row sm:justify-between gap-5">
-                <p className="w-full sm:w-[65%]">You have added <a href="#">Intel Pentium Gold G7400 Desktop PC</a> to your shopping cart!</p>
+            <p className="w-full sm:w-[65%]">You have added <Link className="text-[#ef4a23] hover:underline" to={`/categories/${item.id}`}>{item.name}</Link> to your shopping cart!</p>
             <div className="w-full sm:w-[35%] border border-gray-200 px-3 py-2">
               <div className="flex justify-between border-b border-gray-200 pb-2">
                 <p>Quantity:</p>
-                <span className="font-semibold text-[16px]">{1}</span>
+                <span className="font-semibold text-[16px]">{cart.cartList.length}</span>
               </div>
               <div className="flex justify-between pt-2">
                 <p>Total:</p>
-                <span className="font-semibold text-[16px]">$32998</span>
+                <span className="font-semibold text-[16px]">{cart.totalAmount}</span>
               </div>
             </div>
           </div>
