@@ -51,8 +51,9 @@ const CartDrawer = ({ openDrawer, setOpenDrawer }: PropsType) => {
                 <h1 className="uppercase font-semibold">Your Cart</h1>
                 <svg onClick={() => setOpenDrawer(false)} xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="feather feather-x hover:transform hover:scale-125 cursor-pointer"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
             </div>
+            {cartList.length ? <>
             <div className="flex flex-col gap-5">
-                {cartList.length !== 0 ? (
+                {
                     cartPd.map(({ item, count }, index) => (
                         <div key={index} className="flex gap-2 justify-between items-center p-3 border-b border-[#d6d6d6]">
                             <img className="w-[50px]" src={item.images[0].url} alt={item.name} />
@@ -71,9 +72,7 @@ const CartDrawer = ({ openDrawer, setOpenDrawer }: PropsType) => {
                             </div>
                         </div>
                     ))
-                ) : (
-                    <p className="text-center mt-10 font-medium">Your shopping cart is Empty!</p>
-                )}
+                  }
             </div>
             <div className="cart-footer absolute bottom-0 left-0 right-0">
                 <div className="flex bg-[rgba(55,73,187,.05)] p-5 items-center gap-2">
@@ -95,7 +94,7 @@ const CartDrawer = ({ openDrawer, setOpenDrawer }: PropsType) => {
                 <div className="checkout-btn bg-[#ef4a23] hover:bg-[#BF3B1C] text-center font-semibold text-white cursor-pointer transition-colors duration-500">
                     <button className="p-2 text-[15px]">Checkout</button>
                 </div>
-            </div>
+            </div></> : <p className="text-center pt-10">Your shopping cart is empty!</p> }
         </div>
     );
 };

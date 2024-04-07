@@ -4,15 +4,15 @@ import { useDispatch } from "react-redux";
 import { addToCart } from "../../redux/features/cart/cartSlice";
 
 interface PropsType {
-  name: string | undefined
-  price: number | undefined
-  images: string | undefined
+  name: string
+  price: number
+  images: string
   inventory: {
     inStock: boolean
     quantity: number
-  } | undefined
-  brand: string | undefined
-  description: string[] | undefined
+  }
+  brand: string
+  description: string[]
   pdId: string
 }
 const ProductInfo = ({

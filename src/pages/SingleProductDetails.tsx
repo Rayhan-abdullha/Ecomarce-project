@@ -24,13 +24,15 @@ const SingleProductDetails = () => {
       <AfterHeader />
       <div className=" bg-[#F2F4F8] pb-[50px] mt-3">
         <div className="max-w-[1290px] mx-auto px-4">
-          <ProductInfo name={pd?.name}
-            price={pd?.price.current}
-            images={pd?.images[0].url}
-            inventory={pd?.inventory}
-            brand={pd?.brand.name}
-            description={pd?.description}
-            pdId={ pd?.id} />
+          <ProductInfo name={pd?.name as string}
+            price={pd?.price.current as number}
+            images={pd?.images[0].url as string}
+            inventory={pd?.inventory as {
+              inStock: boolean
+              quantity: number}}
+            brand={pd?.brand.name as string}
+            description={pd?.description as string[]}
+            pdId={pd?.id as string} />
           <div className="lg:flex mt-5 gap-5">
             <div className="">
 
